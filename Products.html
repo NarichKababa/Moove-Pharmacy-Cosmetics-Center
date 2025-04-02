@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Moove Pharmacy Products">
+    <meta name="keywords" content="Pharmacy, Products, Moove">
+    <meta name="author" content="Moove Pharmacy">
+    <title>Moove Pharmacy Products</title>
+    <link rel="icon" type="image/png" href="WhatsApp Image 2025-04-01 at 15.17.02_5f465517 - Copy.jpg" style="border-radius: 50%;">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(234, 250, 239);
+        }
+        @media screen and (min-width: 480px){
+           body {
+            background-image: url('WhatsApp Image 2025-03-12 at 16.26.40_d4c88633.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            }
+        }
+
+ body {
+  overflow-y: scroll; /* Ensure scrollbar is visible initially */
+  }
+
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Initial scrollbar color */
+  border-radius: 4px;
+}
+
+body.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make scrollbar invisible */
+}
+        .header{
+            background-color: #0ee552;
+            color: rgb(30, 26, 26);
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+            margin: auto;
+
+        }
+            
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align:center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: 60%;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .product-item .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .product-item button {
+            background-color: #0091ff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://unsplash.com/photos/5eqZUR08qY8">
+</head>
+<body>
+       <!-- <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="window.location.href='index.html'">Continue Shopping</button>
+       </div> --->  
+            
+            <div class="header">
+            <h1>Moove Pharmacy Products</h1>
+        <p>Welcome to Moove Pharmacy! We have a wide range of products to meet your health needs.</p>
+        <!--<p>Click on the <strong>"Add to Cart"</strong> button to add a product to your cart.</p>
+        <p>Click on the <strong>"Checkout"</strong> button to view your cart and proceed to payment.</p>-->
+            </div>
+        <h2 style="background-color: burlywood; padding: 10px;margin: auto;">Our Store</h2>
+        <div class="product-grid">  
+         <div class="product-item">
+            <img src="https://plus.unsplash.com/premium_photo-1672073400013-95d963f9e520?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbmRhZ2V8ZW58MHx8MHx8fDA%3D" alt="Bandages">
+            <h3>Bandages</h3>
+            <p class="price">$5.00</p>
+            <!--<button onclick="addToCart('Bandages', 5.00)">Add to Cart</button>-->
+         </div> 
+            <div class="product-item">
+                <img src="photos/1000112802.jpg" alt="Vitamins">
+                <h3>Vitamins</h3>
+                <p class="price">$10.00</p>
+                <!--<button onclick="addToCart('Vitamins', 10.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112939.jpg" alt="Conception">
+                <h3>Fertility and Conception</h3>
+                <p class="price">$15.00</p>
+                <!--<button onclick="addToCart('Fertility and Conception', 15.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112941.jpg" alt="Slim trim capsules">
+                <h3>Slim trim capsules</h3>
+                <p class="price">$20.00</p>
+                <!--<button onclick="addToCart('Slim trim capsules', 20.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112943.jpg" alt="Diabetes Care">
+                <h3>Diabetes Care</h3>
+                <p class="price">$18.00</p>
+                <!--<button onclick="addToCart('Diabetes Care', 18.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112945.jpg" alt="Cod Liver Oil">
+                <h3>Cod Liver Oil</h3>
+                <p class="price">$12.00</p>
+               <!--<button onclick="addToCart('Cod Liver Oil', 12.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112947.jpg" alt="Kidz Probio">
+                <h3>Kidz Probio</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Kidz Probio', 5.00)">Add to Cart</button>-->
+            </div>
+
+            <div class="product-item">
+                <img src="photos/1000112951.jpg" alt="Apple Vinegar">
+                <h3>Apple Vinegar</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Apple Vinegar', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112955.jpg" alt="Aptamil">
+                <h3>Aptamil</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Aptamil', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112966.jpg" alt="Cran Max Aqua">
+                <h3>Cran Max Aqua</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Cran Max Aqua', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112974.jpg" alt="Multi-Vitamins Liquid">
+                <h3>Multi-Vitamins</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Multi-Vitamins Liquid', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112984.jpg" alt="WellMan Prostate">
+                <h3>Wellman Prostate</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Wellman Prostate', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112972.jpg" alt="Sabroso">
+                <h3>Sabroso</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Sabroso', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112992.jpg" alt="Sensodine">
+                <h3>Sensodine-Rapid Action</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Sensodine-Rapid Action', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112990.jpg" alt="Sensodine new">
+                <h3>Sensodine Repair and Protect</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Sensodine repair and protect', 5.00)">Add to Cart</button>-->
+            </div>
+            <div class="product-item">
+                <img src="photos/1000112998.jpg" alt="Eurax Cream">
+                <h3>Eurax Cream</h3>
+                <p class="price">$5.00</p>
+                <!--<button onclick="addToCart('Eurax Cream', 5.00)">Add to Cart</button>-->
+            </div>
+                <div class="product-item">
+                    <img src="photos/1000113000.jpg" alt="wellwoman">
+                    <h3>Wellwoman</h3>
+                    <p class="price">$5.00</p>
+                    <!--<button onclick="addToCart('Wellwoman', 5.00)">Add to Cart</button>-->
+                </div>
+                <div class="product-item">
+                    <img src="photos/1000113005.jpg" alt="Bio-Oil">
+                    <h3>Bio-Oil</h3>
+                    <p class="price">$5.00</p>
+                   <!--<button onclick="addToCart('Bio-Oil', 5.00)">Add to Cart</button>-->
+                </div>
+                <div class="product-item">
+                    <img src="photos/1000113007.jpg" alt="Oilatum">
+                    <h3>Oilatum</h3>
+                    <p class="price">$5.00</p>
+                    <!--<button onclick="addToCart('Oilatum Junior Cream', 5.00)">Add to Cart</button>-->
+                </div>
+                <div class="product-item">
+                    <img src="photos/1000113009.jpg" alt="Pilex Tablets">
+                    <h3>Pilex Tablets</h3>
+                    <p class="price">$5.00</p>
+                    <!--<button onclick="addToCart('Pilex Tablets', 5.00)">Add to Cart</button>-->
+                </div>
+                <div class="product-item">
+                    <img src="photos/1000113023.jpg" alt="Neurozan">
+                    <h3>Neurozan</h3>
+                    <p class="price">$5.00</p>
+                    <!--<button onclick="addToCart('Neurozan', 5.00)">Add to Cart</button>-->
+                </div>
+        </div>
+    </div>
+    <h2 style="background-color: burlywood; padding: 10px;margin: auto;">Beauty & Cosmetics</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm91bmRhdGlvbiUyMGJvdHRsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Foundation">
+            <h3>Foundation</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Foundation', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1ha2V1cHxlbnwwfHwwfHx8MA%3D%3D" alt="Eye Shadow">
+            <h3>Eye Shadow</h3>
+            <p class="price">$20.00</p>
+            <!--<button onclick="addToCart('Eye Shadow', 20.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1643185539104-3622eb1f0ff6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29zbWV0aWNzfGVufDB8fDB8fHww" alt="Lipstick">
+            <h3>Lipstick</h3>
+            <p class="price">$15.00</p>
+            <!--<button onclick="addToCart('Lipstick', 15.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112937.jpg" alt="Uganda Bentonite">
+            <h3>Uganda Bentonite</h3>
+            <p class="price">$18.00</p>
+            <!--<button onclick="addToCart('Uganda Bentonite', 18.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112949.jpg" alt="Blush">
+            <h3>Panty Liners</h3>
+            <p class="price">$12.00</p>
+            <!--<button onclick="addToCart('Kotex Panty Liners', 12.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1632221522866-bf40bad1db53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bml2ZWF8ZW58MHx8MHx8fDA%3D" alt="Nivea">
+            <h3>Nivea</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Nivea', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://movitproducts.com/wp-content/uploads/2022/02/Movit-Herbal-Soap.png" alt="Movit herbal">
+            <h3>Movit-Herbal Soap</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Movit-Herbal Soap', 25.00)">Add to Cart</button>-->
+        </div>
+       
+        <div class="product-item">
+            <img src="https://movitproducts.com/wp-content/uploads/2022/02/Movit-Super-Ultra-150g-Relaxer-500x500.png" alt="Hair-Relaxer">
+            <h3>Movit Hair-Relaxer</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Movit Hair-Relaxer', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://movitproducts.com/wp-content/uploads/2022/02/Movit-Baby-Oil-500x500.png" alt="Baby-Oil">
+            <h3>Movit Baby-Oil</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Movit-Baby-Oil', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJlYXV0eSUyMGFuZCUyMGNvc21ldGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="Nail-Polish">
+            <h3>Nail-Polish</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Nail-Polish', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112953.jpg" alt="Dove">
+            <h3>Dove</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Dove', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww" alt="Make-Up Brush">
+            <h3>Make-Up Brush</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Make-Up Brush', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112996.jpg" alt="Aloe Vera">
+            <h3>Herbolene Aloe Vera</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Herbolene Aloe Vera', 25.00)">Add to Cart</button>-->
+        </div>
+
+ <div class="product-item">
+            <img src="https://movitproducts.com/wp-content/uploads/2022/02/Movit-Hair-Dye-500x500.png" alt="Hair-Dye">
+            <h3>Movit Hair-Dye</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Movit-Hair-Dye', 25.00)">Add to Cart</button>-->
+        </div>
+       
+        <div class="product-item">
+            <img src="https://movitproducts.com/wp-content/uploads/2022/02/Movit-Shampoo-Apple-Jerrycan-copy-500x500.png" alt="Hair-Shampoo">
+            <h3>Hair-Shampoo</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Hair-Shampoo', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112957.jpg" alt="Vaseline">
+            <h3>Vaseline</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Vaseline', 25.00)">Add to Cart</button>-->
+        </div>
+        <div class="product-item">
+            <img src="photos/1000112959.jpg" alt="Hair Remover">
+            <h3>Nair-Hair Remover</h3>
+            <p class="price">$25.00</p>
+            <!--<button onclick="addToCart('Nair-Hair remover', 25.00)">Add to Cart</button>-->
+        </div>
+
+        
+     <div class="product-item">
+        <img src="photos/1000112961.jpg" alt="Royal">
+        <h3>Royal</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Royal', 25.00)">Add to Cart</button>-->
+    </div>
+    
+    <div class="product-item">
+        <img src="photos/1000112964.jpg" alt="Intense">
+        <h3>Intense</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Intense', 25.00)">Add to Cart</button>-->
+    </div>
+    
+    <div class="product-item">
+        <img src="photos/1000112968.jpg" alt="Tumeric Oil">
+        <h3>Tumeric Oil</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Tumeric Oil', 25.00)">Add to Cart</button>-->
+    </div>
+    
+    <div class="product-item">
+        <img src="photos/1000112970.jpg" alt="Massage Oil">
+        <h3>Massage Oil</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Massage Oil', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000112988.jpg" alt="Zinc and Castor Oil Cream">
+        <h3>Zinc and Castor Oil Cream</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Zinc and Castor Oil Cream', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113011.jpg" alt="Vaseline">
+        <h3>Cocoa Vaseline</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Cocoa Vaseline', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113013.jpg" alt="Bump Patrol Razor Solutions">
+        <h3>Bump Patrol Razor Solutions</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Bump Patrol', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113017.jpg" alt="Dove body love">
+        <h3>Dove Body Love</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Dove Body Love', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113021.jpg" alt="Olive Oil">
+        <h3>Olive Oil</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Olive Oil', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113027 (1).jpg" alt="Magnesia Liquid">
+        <h3>Magnesia Liquid</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Magnesia Liquid', 25.00)">Add to Cart</button>-->
+    </div>
+    <div class="product-item">
+        <img src="photos/1000113030.jpg" alt="Facial Scrub">
+        <h3>Facial Scrub</h3>
+        <p class="price">$25.00</p>
+        <!--<button onclick="addToCart('Facial Scrub', 25.00)">Add to Cart</button>-->
+    </div>
+
+    </div>
+    </div>
+</body>
+    <h2 style="background-color: burlywood; padding: 10px;margin: auto;">More Products</h2>
+
+    <footer style="background-color: #0ee552; color: rgb(30, 26, 26); padding: 10px; text-align: center; font-size: 20px; border-radius: 10px; margin: auto;">
+        <p>Moove Pharmacy</p>
+        <p>&copy; 2024 Moove Pharmacy. All rights reserved.</p>
+    </footer>
+
+   <script>
+       /* let cart = [];
+        let total = 0;
+
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            total += price;
+            alert(`${item} added to cart`);
+        }
+
+        function checkout() {
+            let cartItems = document.getElementById('cart-items');
+            let cartTotal = document.getElementById('cart-total');
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                let li = document.createElement('li');
+                li.textContent = `${item.item} - $${item.price}`;
+                cartItems.appendChild(li);
+            });
+            cartTotal.textContent = total.toFixed(2);
+        }  */
+    </script>
+     <script>
+        let scrollTimeout;
+        
+        window.addEventListener('scroll', () => {
+          document.body.classList.add('hide-scrollbar');
+        
+          clearTimeout(scrollTimeout); // Clear previous timeout
+        
+          scrollTimeout = setTimeout(() => {
+            document.body.classList.remove('hide-scrollbar');
+          }, 600); // Adjust time (milliseconds) for how long to hide the scrollbar
+        });
+        </script>
+</body>
+</html>

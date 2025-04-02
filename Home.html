@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Moove Pharmacy Products">
+    <meta name="keywords" content="Pharmacy, Products, Moove">
+    <meta name="author" content="Moove Pharmacy">
+    <title>Moove Pharmacy - Your Health, Our Priority</title>
+    <link rel="icon" type="image/png" href="WhatsApp Image 2025-04-01 at 15.17.02_5f465517 - Copy.jpg" style="border-radius: 50%;">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: aliceblue;
+        }
+
+        body {
+  overflow-y: scroll; /* Ensure scrollbar is visible initially */
+  }
+
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Initial scrollbar color */
+  border-radius: 4px;
+}
+
+body.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make scrollbar invisible */
+}
+
+        /* Global Styles */
+        .container {
+            width:100%;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        header {
+            background-color: #56cf15;
+            color: hsl(0, 0%, 95%);
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            border-radius: 1px;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 90px;
+            height: 80px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        header .logo h1 {
+            font-size: 1.5rem;
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            background-color: bisque;
+            color: black;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+
+        .hero {
+            background-image: url('IMG_20250323_172233_098.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 100%;
+            height: 800px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-image:url('IMG_20250331_112409_953[1].jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 40px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .primary-button {
+            background-color:blue;
+        }
+
+        .secondary-button {
+            background-color: #6c7d74;
+        }
+
+
+        .section {
+            background-color:blanchedalmond;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+
+        footer {
+            background-color: #56cf15;
+            color: hsl(0, 0%, 95%);
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            border-radius: 1px;
+        }
+
+    
+        * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  .text {font-size: 11px}
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photos img{
+  width:300px;
+  height: 300px;
+  margin: 5px;
+}
+
+    </style>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="WhatsApp Image 2025-03-25 at 15.51.54_efee2b88.jpg" alt="Moove Pharmacy Logo">
+            </div>
+            <h1>MOOVE PHARMACY & COSMETICS CENTER</h1>
+            <p>Health is the new Wealth</p>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Services.html">Locations</a></li>
+                    <li><a href="Services.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 id="demo"></h1>
+
+ <script>
+        async function myDisplay() {
+          let myPromise = new
+        Promise(function(resolve) {
+          setTimeout(function()  {
+              resolve("OPEN 24/7");
+          },3000);
+          });
+          document.getElementById("demo").innerHTML = await myPromise;
+        } 
+        myDisplay();
+      </script>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Trusted Partner in Health and Wellness</h1>
+                <p>Providing quality medications, expert advice, and compassionate care in Uganda.</p>
+                <a href="Products.html" class="button primary-button">Explore Our Products</a>
+                <a href="#locations" class="button secondary-button">Find a Location Near You</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Moove Pharmacy</h2>
+            <p>Welcome to Moove Pharmacy, your dedicated healthcare partner in Uganda. We are committed to providing high-quality pharmaceutical products and exceptional customer service. We are here to offer professional advice and support for your health and well-being.</p>
+            <p>At Moove Pharmacy, we believe in making healthcare accessible and affordable for everyone in our community. We strive to create a welcoming and trustworthy environment where you can feel confident in your healthcare choices.</p>
+            </div>
+    </section>
+
+    </div>
+    </section>
+    <br>
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="IMG_20250323_172210_757.jpg" style="width:100%" height="20%">
+          <!--<div class="text">Full</div>-->
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="IMG_20250331_112409_953[1].jpg" style="width:100%" height="20%">
+          <!--<div class="text">Lusaniya</div>-->
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="IMG_20250331_112526_500[1].jpg" style="width:100%" height="20%">
+          <!--<div class="text">Nyam</div>-->
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="IMG_20250331_112925_423.jpg" style="width:100%" height="20%">
+            <!--<div class="text">Wow</div>-->
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+        </div>
+        <br>
+
+    
+        <h1>MORE ABOUT US</h1>
+    <div class="photos">
+        <img src="WhatsApp Image 2025-03-31 at 12.57.04_bc47358c.jpg" alt="great service delivery">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.56.38_1df80b0f.jpg" alt="photo">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.22.55_e8d6406f.jpg" alt="staff">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.56.37_b3a1e3e6.jpg" alt="staff">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.59.24_c8862421.jpg" alt="staff">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.59.23_2dc904ab.jpg" alt="staff">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.59.24_4b19bd92.jpg" alt="staff">
+        <br>
+        <img src="WhatsApp Image 2025-03-31 at 12.57.04_bc47358c.jpg" alt="staff">
+    </div>
+
+
+    <script>
+      let scrollTimeout;
+      
+      window.addEventListener('scroll', () => {
+        document.body.classList.add('hide-scrollbar');
+      
+        clearTimeout(scrollTimeout); // Clear previous timeout
+      
+        scrollTimeout = setTimeout(() => {
+          document.body.classList.remove('hide-scrollbar');
+        }, 500); // Adjust time (milliseconds) for how long to hide the scrollbar
+      });
+      </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Moove Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+      
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script> 
+
+</body>
+</html>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+   
+   
